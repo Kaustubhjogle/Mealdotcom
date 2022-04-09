@@ -1,0 +1,235 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    /* padding-top: 2px; */
+}
+/* Navigation Bar */
+#navbar::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width:100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    position:sticky;
+    top:0px;
+display: flex;
+align-items: center;
+width: 100%;
+z-index: 1;
+}
+#logo {
+    padding: 2px;
+    margin: 5px;
+
+/* border:1px solid black; */
+}
+#logo img{
+    width:60px;
+    height:50px;
+}
+span a{
+    font-family: 'Baloo Paaji 2', cursive;
+    padding:2px ;
+    text-decoration: none;
+    color:white;
+    padding: 2px 12px;
+    margin: 4px 12px;
+    font-weight: bold;
+
+}
+span a:hover{
+   background-color: white;
+   color:black;
+   border-radius: 8px;
+   font-weight: bold;
+
+}
+
+/* Home section */
+#home::before{
+    content: '';
+    position: absolute;
+    background: url('../Images/bg-image.jpg') no-repeat center center/cover;
+    /* background-color: black; */
+    width:100%;
+    height: 54%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height:264px;
+    color: white;
+    padding: 6px 200px;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+#home h1{
+
+    padding: 4px 10px;
+    margin: 4px;
+/* border: 1px solid black; */
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+   
+    text-align: center;
+}
+/* Services section */
+#services-box{
+    display: flex;
+
+}
+.services-boxes{
+    border-radius: 22px;
+    border: 1px solid #bbb2b2;
+    padding: 15px 10px;
+    margin: 10px 12px;
+    box-shadow: 4px 4px 8px  #bbb2b2;
+
+    
+}
+.services-boxes p{
+    font-family: 'Bree Serif', serif; 
+}
+#services-box img{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 100px;
+   text-align: center;
+}
+
+
+/* CLIENT SECTION */
+#client-section::before{
+    content: '';
+    position:absolute;
+    background-color: #fad7d7;
+    width:100%;
+    height:90%;
+    z-index:-1;
+    
+}
+#client-section{
+    height:320px;
+    position: relative;
+    /* border:1px solid black; */
+    margin-top: 30px;
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-items{
+    padding:34px;
+}
+#clients img{
+    width:120px;
+}
+
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+    height:550px;
+      
+}
+
+.contactbox{
+    padding: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* border: 1px solid black; */
+ 
+}
+
+.contactbox form{
+  display: block;
+  width:400px;
+  background-color: rgb(223, 219, 219);
+  box-shadow: 3px 3px 5px grey;
+    /* border: 1px solid black; */
+}
+.box-item{
+    /* border: 1px solid black; */
+    padding:9px 15px;
+    margin: 9px;
+}
+
+.box-item input,.submit-button{
+    width:90%;
+    padding:9px 15px;
+    border-radius: 12px;
+    outline: none;
+    font-size:1rem;
+    border:1px solid rgb(211, 211, 211);
+    box-shadow: 3px 3px 5px grey;
+    margin-top: 0;
+    font-family: 'Bree Serif', serif;
+}
+.submit-button{
+    display: block;
+    width:80%;
+    margin: auto;
+    background-color: gray;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding:9px 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Utility Classes */
+.primary{
+font-size: 2.5rem;
+font-family: 'Bree Serif', serif;
+text-align: center;
+}
+.secondary{
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    }
+ .btn{
+
+    border-radius: 12px;
+    background-color: #ee3838;
+    color: white;
+    margin: 10px;
+    padding: 6px 13px;
+    text-align: center;
+    outline: none;
+    border: 2px solid #f10909;
+    font-family: 'Bree Serif', serif;
+
+    }
+    .btn:hover{
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .center{
+        text-align: center;
+    }
+    
